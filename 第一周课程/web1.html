@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #name{
+        background-color: red;
+        font-size: 30px ;
+    }
+</style>
+<body>
+    <p id="name">江西软件大学</p>
+    <button id="btn1" type="submit">提交</button>
+    <script>
+        var target = document.getElementById("btn1");
+        target.onclick = function (){
+            alert("我被点击了");
+        }
+        document.body.onmousemove = function ()
+        {
+            console.log("鼠标在移动");
+        }
+        document.body.onmouseenter = function()
+        {
+            console.log("鼠标进来了");
+        }
+        document.body.onkeydown = function()
+        {
+            console.log("键盘被按下");
+        }
+        document.body.onkeyup = function ()
+        {
+            console.log("键盘起来了");
+        }
+        document.body.onkeypress = function()
+        {
+            console.log("键盘被摁下");
+        }
+    </script>
+</body>
+</html>
