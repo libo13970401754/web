@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="mystyle" rel="stylesheet" href="./index1.css">
+</head>
+<body>
+    <div id="main"></div>
+    <br>
+    <br>
+    <button id="myButton">换肤</button>
+    <script>
+        var buttonTarget = window.document.getElementById("myButton");
+        buttonTarget.onclick = function target(){
+            var linkTarget = document.getElementById("mystyle");
+            linkTarget.href="index2.css";
+        }
+        var chance = function(){
+            var linkTarget = document.getElementById("mystyle");
+            linkTarget.href="index2.css";
+        }
+        setTimeout(chance,2000)
+    </script>
+</body>
+</html>
